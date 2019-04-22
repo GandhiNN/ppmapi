@@ -1,0 +1,8 @@
+sysTput:
+  Resource: https://{{.URI}}/ppm/res/reports/Mobile+StarOS+All+Counters/StarOS+SYSTEM+All+Counters/StarOS+SYSTEM+All+Counters+List+1?FQDN=Node={{.Node}}&intervalTypeKey={{.IntervalTypeKey}}&durationSelect={{.DurationSelect}}&outputType=csv&maxPageSize=20000&columnHeaders=Timestamp,SessTxbytes,SessRxbytes
+
+apnTput:
+  Resource: https://{{.URI}}/ppm/rest/reports/Mobile+StarOS+Statistics/StarOS+APN/StarOS+APN+Traffic/StarOS+APN+GGSN+Interface+Traffic+Statistics?FQDN=Node={{.Node}}&intervalTypeKey={{.IntervalTypeKey}}&durationSelect={{.DurationSelect}}&columnHeaders=Timestamp,APN+Name,Bytes+Total+Number+Uplink,Bytes+Total+Number+Downlink&outputType=csv&maxPageSize=20000
+
+sysSession:
+  Resource: https://{{.URI}}/ppm/rest/reports/Mobile+StarOS+KPI/StarOS+System+KPI/Platform+Performance/StarOS+KPI+Current+Number+of+Sessions+on+the+Whole+System?FQDN=Node={{.Node}}&intervalTypeKey={{.IntervalTypeKey}}&durationSelect={{.DurationSelect}}&outputType=csv&maxPageSize=20000
