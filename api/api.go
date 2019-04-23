@@ -76,7 +76,7 @@ func URLBuilder(key string, api API) (URL string, err error) {
 		log.Fatalf("error reading path, %s", err)
 	}
 	dir := filepath.Dir(path)
-	viper.SetConfigFile(dir + "/uri.yaml")
+	viper.SetConfigFile(dir + "/configs/uri.yaml")
 	if err := viper.ReadInConfig(); err != nil {
 		log.Fatalf("error reading config file, %s", err)
 		return "", err
